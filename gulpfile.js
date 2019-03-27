@@ -15,7 +15,7 @@ function pugTest () {
             return JSON.parse(fs.readFileSync('./app/data.json'))
         }))
         .pipe(pug())
-        .pipe(gulp.dest('/dist'));
+        .pipe(gulp.dest('./dist'));
 }
 
 exports.default = gulp.series(defaultTask, pugTest)
