@@ -6,12 +6,12 @@ const path = require("path");
 // PUG
 
 app.set("view engine", "pug");
-app.set("views", path.join(__dirname, "./dist/"));
+app.set("views", path.join(__dirname, "./app/views"));
 
 // Store static files in public folder
 app.use(
-  "./dist",
-  express.static(path.join(__dirname, "./dist"), { maxAge: "30 days" })
+  "./app",
+  express.static(path.join(__dirname, "./app"), { maxAge: "30 days" })
 );
 
 app.get("/", (req, res) =>
