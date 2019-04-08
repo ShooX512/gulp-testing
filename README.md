@@ -1,6 +1,2 @@
 # gulp-testing
-efeffesfesfes
-gdfdfdgfdgf
-
-dadawda
-daddadadada
+This is some test text
